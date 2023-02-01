@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Graduation_project.DetailPage"
+             Title="Detail"
+             Appearing="ContentPage_Appearing">
+    <VerticalStackLayout HorizontalOptions="Center">
+        <HorizontalStackLayout>
+        <Label Text="Title"/>
+        <Entry x:Name="label" FontSize="Body" WidthRequest="300" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+        <Label Text="Note"/>
+        <Entry x:Name="label2" FontSize="Body" WidthRequest="300" HeightRequest="200" VerticalTextAlignment="Start"  />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Button x:Name="Note_Update" Text="Update" Clicked="Note_Update_Clicked" WidthRequest="100" />
+            <Button x:Name="Note_Delete" Text="Delete"  Clicked="Note_Delete_Clicked" WidthRequest="100" />
+        </HorizontalStackLayout>
+
+       
+    </VerticalStackLayout>
+</ContentPage>
